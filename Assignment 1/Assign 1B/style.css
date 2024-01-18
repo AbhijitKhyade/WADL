@@ -10,15 +10,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd; */
+    background: #405c40;
+    border: 2px solid;
+    /* animation: animateBg 10s linear infinite; */
+
+}
+
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .containers {
     width: 50%;
-    /* height: 100vh; */
     max-width: 50%;
-
 }
+
+
+
 
 
 .register-box {

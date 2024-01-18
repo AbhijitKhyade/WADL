@@ -59,7 +59,7 @@ button.addEventListener("click", (event) => {
             data: JSON.stringify(formData),
             contentType: 'application/json',
             success: function (response) {
-                window.location.href = 'users.html?data' + JSON.stringify(response);
+                window.location.href = 'users.html?data=' + encodeURIComponent(JSON.stringify(response));
             },
             error: function (error) {
                 console.log('Error:', error)
