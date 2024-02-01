@@ -10,11 +10,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #fdfdfd; */
     background: #405c40;
-    border: 2px solid;
-    /* animation: animateBg 10s linear infinite; */
+    /* border: 2px solid; */
 
+
+}
+
+section {
+    width: 100%;
+    background-color: rgb(236, 73, 105);
+    animation: animateBg 10s linear infinite;
+}
+
+section .container {
+    width: 60%;
 }
 
 @keyframes animateBg {
@@ -26,12 +35,6 @@ body {
         filter: hue-rotate(360deg);
     }
 }
-
-.containers {
-    width: 50%;
-    max-width: 50%;
-}
-
 
 
 
