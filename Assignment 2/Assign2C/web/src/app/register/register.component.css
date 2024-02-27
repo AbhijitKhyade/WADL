@@ -1,0 +1,15 @@
+.register-container {
+  /* background-color: crimson; */
+  height: 90vh;
+}
+
+.content {
+  border: 1px solid lightgrey;
+  padding: 18px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.register-head {
+  text-align: center;
+}

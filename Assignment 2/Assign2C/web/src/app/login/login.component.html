@@ -1,0 +1,33 @@
+<div class="login-container d-flex flex-column justify-content-center align-items-center">
+  <div class="content shadow">
+    <div class="login-head">
+      <h1>Login</h1>
+    </div>
+    <div class="login-box">
+      <form class="d-flex flex-column" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control"  id="email" formControlName="email">
+            <!-- <div *ngIf="loginForm.get('email').errors && loginForm.get('email').touched" class="error">
+              Please enter a valid email address.
+            </div> -->
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password" >
+            <!-- <div *ngIf="registrationForm.get('password').errors?.required && registrationForm.get('password').touched" class="error">
+              Password is required.
+            </div> -->
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="mb-1 mt-3 d-flex justify-content-center">
+          <a routerLink="/register" style="font-size: small; ">
+            New User ?
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

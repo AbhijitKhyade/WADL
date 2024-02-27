@@ -1,0 +1,15 @@
+.login-container {
+  /* background-color: crimson; */
+  height: 90vh;
+}
+
+.content {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.login-head {
+  text-align: center;
+}
